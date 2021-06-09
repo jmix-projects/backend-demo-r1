@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1-pg-mssql-hsqldb" author="backenddemo" dbms="postgresql, mssql, hsqldb">
+
+        <insert tableName="USER_">
+            <column name="ID" value="480ead3a-5eca-4f3b-8b06-512ba5add7d9"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="PASSWORD" value="{noop}1"/>
+            <column name="EMAIL" value="first@gmail.com"/>
+            <column name="ENABLED" valueBoolean="true"/>
+        </insert>
+        <insert tableName="USER_">
+            <column name="ID" value="284c7361-58d0-4ba3-8a1e-f3a7740a53eb"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="PASSWORD" value="{noop}1"/>
+            <column name="EMAIL" value="second@gmail.com"/>
+            <column name="ENABLED" valueBoolean="true"/>
+        </insert>
+        <insert tableName="USER_">
+            <column name="ID" value="49963ea1-b86b-4e64-9f2c-ab8244be4af9"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="third"/>
+            <column name="PASSWORD" value="{noop}1"/>
+            <column name="EMAIL" value="third@gmail.com"/>
+            <column name="ENABLED" valueBoolean="true"/>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="1-oracle-mysql-mariadb" author="backenddemo" dbms="oracle, mysql, mariadb">
+
+        <insert tableName="USER_">
+            <column name="ID" value="480ead3a5eca4f3b8b06512ba5add7d9"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="PASSWORD" value="{noop}1"/>
+            <column name="EMAIL" value="first@gmail.com"/>
+            <column name="ENABLED" valueBoolean="true"/>
+        </insert>
+        <insert tableName="USER_">
+            <column name="ID" value="284c736158d04ba38a1ef3a7740a53eb"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="PASSWORD" value="{noop}1"/>
+            <column name="EMAIL" value="second@gmail.com"/>
+            <column name="ENABLED" valueBoolean="true"/>
+        </insert>
+        <insert tableName="USER_">
+            <column name="ID" value="49963ea1b86b4e649f2cab8244be4af9"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="third"/>
+            <column name="PASSWORD" value="{noop}1"/>
+            <column name="EMAIL" value="third@gmail.com"/>
+            <column name="ENABLED" valueBoolean="true"/>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="2-pg-mssql-hsqldb" author="backenddemo" dbms="postgresql, mssql, hsqldb">
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="f1639c56-d6f8-4c2f-8c7b-09eefd535fa9"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="ROLE_CODE" value="system-full-access"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="21a7b805-0022-4b34-98c0-331704b6a5a0"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="ROLE_CODE" value="bpm-admin"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="b2a4a7e5-ede4-4038-bf30-e494894bc109"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="ROLE_CODE" value="bpm-rest-api"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="fbdcca57-c593-4a5c-b1d4-bbed8a3bcc6d"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="system-full-access"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="6d4eed55-d4ab-43ff-b251-6763f39a9369"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="bpm-admin"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="bb3408f9-0f8e-4b4b-94bd-61e02f65a77e"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="bpm-process-actor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="df6c4b3f-e26d-43d7-bb89-22a37dc1a7e8"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="bpm-rest-api"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="7f7eb088-832a-40e3-99cf-61ce65c1ae82"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="third"/>
+            <column name="ROLE_CODE" value="system-full-access"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="b968a400-4419-439e-80fb-fc0d7d07fdc8"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="third"/>
+            <column name="ROLE_CODE" value="bpm-process-actor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="2-oracle-mysql-mariadb" author="backenddemo" dbms="oracle, mysql, mariadb">
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="f1639c56d6f84c2f8c7b09eefd535fa9"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="ROLE_CODE" value="system-full-access"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="21a7b80500224b3498c0331704b6a5a0"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="ROLE_CODE" value="bpm-admin"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="b2a4a7e5ede44038bf30e494894bc109"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="first"/>
+            <column name="ROLE_CODE" value="bpm-rest-api"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="fbdcca57c5934a5cb1d4bbed8a3bcc6d"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="system-full-access"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="6d4eed55d4ab43ffb2516763f39a9369"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="bpm-admin"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="bb3408f90f8e4b4b94bd61e02f65a77e"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="bpm-process-actor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="df6c4b3fe26d43d7bb8922a37dc1a7e8"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="second"/>
+            <column name="ROLE_CODE" value="bpm-rest-api"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="7f7eb088832a40e399cf61ce65c1ae82"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="third"/>
+            <column name="ROLE_CODE" value="system-full-access"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+        <insert tableName="SEC_ROLE_ASSIGNMENT">
+            <column name="ID" value="b968a4004419439e80fbfc0d7d07fdc8"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="third"/>
+            <column name="ROLE_CODE" value="bpm-process-actor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="3-pg-mssql-hsqldb" author="backenddemo" dbms="postgresql, mssql, hsqldb">
+
+        <insert tableName="BPM_USER_GROUP">
+            <column name="ID" value="2f7cd80c-3f25-444b-83fe-f964cc2b6dc1"/>
+            <column name="VERSION" value="1"/>
+            <column name="NAME" value="bpm-admin"/>
+            <column name="CODE" value="bpm-admin"/>
+            <column name="TYPE_" value="r"/>
+        </insert>
+        <insert tableName="BPM_USER_GROUP_ROLE">
+            <column name="ID" value="81eeda5e-6d68-4bea-83bd-240eb835a620"/>
+            <column name="VERSION" value="1"/>
+            <column name="USER_GROUP_ID" value="2f7cd80c-3f25-444b-83fe-f964cc2b6dc1"/>
+            <column name="ROLE_CODE" value="bpm-admin"/>
+        </insert>
+
+        <insert tableName="BPM_USER_GROUP">
+            <column name="ID" value="bed80b8e-cd31-456a-a6b5-2c333602395d"/>
+            <column name="VERSION" value="1"/>
+            <column name="NAME" value="users"/>
+            <column name="CODE" value="users"/>
+            <column name="TYPE_" value="u"/>
+        </insert>
+        <insert tableName="BPM_USER_GROUP_USER">
+            <column name="ID" value="81eeda5e-6d68-4bea-83bd-240eb835a620"/>
+            <column name="VERSION" value="1"/>
+            <column name="USER_GROUP_ID" value="bed80b8e-cd31-456a-a6b5-2c333602395d"/>
+            <column name="USERNAME" value="first"/>
+        </insert>
+        <insert tableName="BPM_USER_GROUP_USER">
+            <column name="ID" value="d13df2e5-7c00-4c40-a559-9d5b91ed323d"/>
+            <column name="VERSION" value="1"/>
+            <column name="USER_GROUP_ID" value="bed80b8e-cd31-456a-a6b5-2c333602395d"/>
+            <column name="USERNAME" value="second"/>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="3-oracle-mysql-mariadb" author="backenddemo" dbms="oracle, mysql, mariadb">
+
+        <insert tableName="BPM_USER_GROUP">
+            <column name="ID" value="2f7cd80c3f25444b83fef964cc2b6dc1"/>
+            <column name="VERSION" value="1"/>
+            <column name="NAME" value="bpm-admin"/>
+            <column name="CODE" value="bpm-admin"/>
+            <column name="TYPE_" value="r"/>
+        </insert>
+        <insert tableName="BPM_USER_GROUP_ROLE">
+            <column name="ID" value="81eeda5e6d684bea83bd240eb835a620"/>
+            <column name="VERSION" value="1"/>
+            <column name="USER_GROUP_ID" value="2f7cd80c3f25444b83fef964cc2b6dc1"/>
+            <column name="ROLE_CODE" value="bpm-admin"/>
+        </insert>
+
+        <insert tableName="BPM_USER_GROUP">
+            <column name="ID" value="bed80b8ecd31456aa6b52c333602395d"/>
+            <column name="VERSION" value="1"/>
+            <column name="NAME" value="users"/>
+            <column name="CODE" value="users"/>
+            <column name="TYPE_" value="u"/>
+        </insert>
+        <insert tableName="BPM_USER_GROUP_USER">
+            <column name="ID" value="81eeda5e6d684bea83bd240eb835a620"/>
+            <column name="VERSION" value="1"/>
+            <column name="USER_GROUP_ID" value="bed80b8ecd31456aa6b52c333602395d"/>
+            <column name="USERNAME" value="first"/>
+        </insert>
+        <insert tableName="BPM_USER_GROUP_USER">
+            <column name="ID" value="d13df2e57c004c40a5599d5b91ed323d"/>
+            <column name="VERSION" value="1"/>
+            <column name="USER_GROUP_ID" value="bed80b8ecd31456aa6b52c333602395d"/>
+            <column name="USERNAME" value="second"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
