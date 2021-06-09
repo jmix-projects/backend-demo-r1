@@ -29,7 +29,7 @@
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="third"/>
             <column name="PASSWORD" value="{noop}1"/>
-            <column name="EMAIL" value="third@gmail.com"/>
+            <column name="EMAIL" value="third@mail.com"/>
             <column name="ENABLED" valueBoolean="true"/>
         </insert>
 
@@ -58,7 +58,7 @@
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="third"/>
             <column name="PASSWORD" value="{noop}1"/>
-            <column name="EMAIL" value="third@gmail.com"/>
+            <column name="EMAIL" value="third@mail.com"/>
             <column name="ENABLED" valueBoolean="true"/>
         </insert>
 
