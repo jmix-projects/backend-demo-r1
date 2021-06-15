@@ -7,7 +7,7 @@
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
     <changeSet id="1" author="backenddemo">
         <createTable tableName="CLIENT">
-            <column name="ID" type="UUID">
+            <column name="ID" type="${uuid.type}">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="PK_CLIENT"/>
             </column>
             <column name="NAME" type="VARCHAR(255)"/>
