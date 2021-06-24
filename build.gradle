@@ -21,8 +21,8 @@ repositories {
     maven {
         url 'https://nexus.jmix.io/repository/premium'
         credentials {
-            username '160808000168'
-            password 'O2xLPO8dcYEg'
+            username rootProject['premiumRepoUser']
+            password rootProject['premiumRepoPass']
         }
     }
 }
