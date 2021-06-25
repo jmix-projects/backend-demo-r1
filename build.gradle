@@ -64,5 +64,9 @@ bootBuildImage {
     } else {
         imageName = 'docker.haulmont.com/platform/infrastructure/demo-r1/backend-demo-r1:testing'
     }
+    environment = [
+            "BPE_DELIM_JAVA_TOOL_OPTIONS" : " ",
+            "BPE_APPEND_JAVA_TOOL_OPTIONS" : "-Duser.country=RU -Duser.language=ru"
+    ]
 }
 
